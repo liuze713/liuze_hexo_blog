@@ -25,7 +25,7 @@ on [GitHub](https://github.com/hexojs/hexo/issues).
 ### Create a new post
 
 ``` bash
-$ hexo new "My New Post"
+$ hexo new "My New Post hahaahaha😄"
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
