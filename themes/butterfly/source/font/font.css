@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'xw';
+  font-display: swap;
+  src: url('站酷小薇LOGO体.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'CascadiaCode';
+  font-display: swap;
+  src: url('CascadiaCode.ttf') format("truetype");
+}
