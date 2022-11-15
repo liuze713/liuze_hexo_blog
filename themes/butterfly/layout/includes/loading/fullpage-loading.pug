@@ -2,12 +2,14 @@
     .loading-left-bg
     .loading-right-bg
     .spinner-box
-        .configure-border-1
-            .configure-core
-        .configure-border-2
-            .configure-core
-        .loading-word= _p('加载中...')
-
+        //.configure-border-1
+        //    .configure-core
+        //.configure-border-2
+        //    .configure-core
+        //.loading-word= _p('加载中...')
+        .loading-word
+            object(data="/img/Rolling-1s-200px.svg" type="image/svg+xml")
+                //img(src='/img/Rolling-1s-200px.svg')
 script.
   const preloader = {
     endLoading: () => {
