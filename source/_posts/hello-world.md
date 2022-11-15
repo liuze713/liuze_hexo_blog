@@ -2,7 +2,7 @@
 title: Hello World
 tags: java
 categories: diyi
-cover: /img/aaaaaaaaa.webp
+cover: /img/index_img.webp
 abbrlink: 4a17b156
 date: 2022-10-22 00:00:00
 //:
