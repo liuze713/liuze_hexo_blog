@@ -35,7 +35,7 @@ mixin rightsideItem(array)
   - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside']
   - const showArray = enable ? show && show.split(',') : ['toc','chat','comment']
 
-  
+
   #rightside-config-hide
     if hideArray
       +rightsideItem(hideArray)
@@ -45,7 +45,7 @@ mixin rightsideItem(array)
         button#rightside_config(type="button" title=_p("rightside.setting"))
           i.fas.fa-cog.fa-spin
     else
-      if is_post()
+      if false
         if (readmode || translate.enable || (darkmode.enable && darkmode.button))
           button#rightside_config(type="button" title=_p("rightside.setting"))
             i.fas.fa-cog.fa-spin
@@ -56,5 +56,10 @@ mixin rightsideItem(array)
     if showArray
       +rightsideItem(showArray)
 
+    if is_post() && readmode
+        button#readmode(type="button" title=_p('rightside.readmode_title'))
+          i.fas.fa-book-open
+    button#hide-aside-btn(type="button" title=_p('rightside.aside'))
+      i.fas.fa-arrows-alt-h
     button#go-up(type="button" title=_p("rightside.back_to_top"))
       i.fas.fa-arrow-up

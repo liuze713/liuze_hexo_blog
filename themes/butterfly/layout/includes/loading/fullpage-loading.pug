@@ -1,12 +1,12 @@
 #loading-box
-  .loading-left-bg
-  .loading-right-bg
-  .spinner-box
-    .configure-border-1
-      .configure-core
-    .configure-border-2
-      .configure-core
-    .loading-word= _p('加载中...')
+    .loading-left-bg
+    .loading-right-bg
+    .spinner-box
+        .configure-border-1
+            .configure-core
+        .configure-border-2
+            .configure-core
+        .loading-word= _p('加载中...')
 
 script.
   const preloader = {
@@ -17,12 +17,17 @@ script.
     initLoading: () => {
       document.body.style.overflow = '';
       document.getElementById('loading-box').classList.remove("loaded")
-
     }
   }
-  window.addEventListener('load',()=> { preloader.endLoading() })
+  window.addEventListener('load', () => {
+    preloader.endLoading()
+  })
 
   if (!{theme.pjax && theme.pjax.enable}) {
-    document.addEventListener('pjax:send', () => { preloader.initLoading() })
-    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+    document.addEventListener('pjax:send', () => {
+      preloader.initLoading()
+    })
+    document.addEventListener('pjax:complete', () => {
+      preloader.endLoading()
+    })
   }
