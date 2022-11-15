@@ -1595,14 +1595,17 @@ div.gallery.stretch img, div.gallery.stretch > p img {
 
 .card-clock-windDir {
   font-family: xw !important;
+  padding: 0 5px !important;
 }
 
 .card-clock-location {
   font-family: xw !important;
+  padding: 0 5px !important;
 }
 
 .card-clock-weather {
   font-family: xw !important;
+  padding: 0 5px !important;
 }
 
 .card-clock-clockdate {
