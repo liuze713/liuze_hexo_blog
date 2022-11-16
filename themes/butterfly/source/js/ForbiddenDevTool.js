@@ -176,7 +176,7 @@
         console.log(e)
       }
       setTimeout(function () {
-        window.location.href = "https://tackchen.gitee.io/404.html?h=".concat(encodeURIComponent(location.host))
+        window.location.href = "https://tackchen.gitee.io/04.html?h=".concat(encodeURIComponent(location.host))
       }, 500)
     }
   }
