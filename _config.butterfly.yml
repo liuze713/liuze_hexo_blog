@@ -883,6 +883,7 @@ inject:
     - <link rel="stylesheet" href="/css/mouse.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
     - <script src="/live2d-widget/autoload.js"></script>
+    - <script disable-devtool-auto src='/js/ForbiddenDevTool.js'></script>
   bottom:
   # - <script src="xxxx"></script>
 live2d:

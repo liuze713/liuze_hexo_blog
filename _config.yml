@@ -22,7 +22,7 @@ electric_clock:
   layout: # 挂载容器类型
     type: class
     name: aside-content
-#    name: sticky_layout
+    #    name: sticky_layout
     index: 0
   loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
   clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
@@ -36,6 +36,7 @@ electric_clock:
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://www.liuze.run
+#url: http://localhost:4000
 #permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
 abbrlink:
