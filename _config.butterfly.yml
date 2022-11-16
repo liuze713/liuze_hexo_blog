@@ -7,12 +7,9 @@ menu:
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  #  清单||fa fa-heartbeat:
-  #    音乐: /music/ || fas fa-music
-  #    照片: /Gallery/ || fas fa-images
-  #    电影: /movies/ || fas fa-video
+  照片: /Gallery/ || fas fa-images
   #  友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+#  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -20,8 +17,8 @@ menu:
 highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
-highlight_shrink: none # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_height_limit: 200 # unit: px
 code_word_wrap: false
 
 # copy settings
@@ -30,8 +27,7 @@ copy:
   enable: true
   copyright:
     enable: true
-    limit_count: 50
-
+    limit_count: 1
 # social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
@@ -133,7 +129,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
@@ -265,11 +261,11 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: # Valine,Disqus
+  use:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
+  lazyload: true
   count: false # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
@@ -305,8 +301,8 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  appId:
+  appKey:
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
@@ -497,7 +493,7 @@ theme_color:
   hr_color: "#A4D8FA"
   code_foreground: "#F47466"
   code_background: "rgba(27, 31, 35, .05)"
-  toc_color: "#00c4b6"
+  toc_color: "#ed5a65"
   blockquote_padding_color: "#49b1f5"
   blockquote_background_color: "#49b1f5"
   scrollbar_color: "linear-gradient(357deg, #6a11cb 0%,#2575fc 100%)"
@@ -885,9 +881,12 @@ inject:
     - <link rel="stylesheet" href="/css/heoMainColor.css">
     - <link rel="stylesheet" href="/css/poem.css">
     - <link rel="stylesheet" href="/css/mouse.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    - <script src="/live2d-widget/autoload.js"></script>
   bottom:
   # - <script src="xxxx"></script>
-
+live2d:
+  enable: true
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改

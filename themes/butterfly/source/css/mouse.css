@@ -408,11 +408,11 @@
   border-radius: 2em
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #49b1f5;
-  background-image: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, .4) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, .4) 75%, transparent 0, transparent);
-  border-radius: 2em
-}
+/*::-webkit-scrollbar-thumb {*/
+/*  background-color: #49b1f5;*/
+/*  background-image: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, .4) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, .4) 75%, transparent 0, transparent);*/
+/*  border-radius: 2em*/
+/*}*/
 
 ::-webkit-scrollbar-corner {
   background-color: transparent
@@ -443,7 +443,7 @@
   cursor: pointer
 }
 
-.post .post-content h2:before, .post .post-content h3:before, .post .post-content h4:before, .post .post-content h5:before, .post .post-content h6:before {
+.post .post-content h2:before, .page-number, .post .post-content h3:before, .post .post-content h4:before, .post .post-content h5:before, .post .post-content h6:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #49b1f5;
@@ -453,7 +453,7 @@
   transition: color .6s
 }
 
-.post .post-content h2:hover:before, .post .post-content h3:hover:before, .post .post-content h4:hover:before, .post .post-content h5:hover:before, .post .post-content h6:hover:before {
+.post .post-content h2:hover:before, .page-number, .post .post-content h3:hover:before, .post .post-content h4:hover:before, .post .post-content h5:hover:before, .post .post-content h6:hover:before {
   color: #eb5055
 }
 
@@ -558,12 +558,11 @@ audio {
   color: var(--hlnumber-color)
 }
 
-#article-container pre[class*=language-]::-webkit-scrollbar-thumb {
-  background-color: #49b1f5 !important;
-  background-image: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, .4) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, .4) 75%, transparent 0, transparent) !important;
-  border-radius: 2em !important
-}
-
+/*#article-container pre[class*=language-]::-webkit-scrollbar-thumb {*/
+/*  background-color: #49b1f5 !important;*/
+/*  background-image: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, .4) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, .4) 75%, transparent 0, transparent) !important;*/
+/*  border-radius: 2em !important*/
+/*}*/
 code[class*=language-], pre[class*=language-] {
   word-wrap: normal;
   background: #fafafa;
@@ -1628,4 +1627,36 @@ div.gallery.stretch img, div.gallery.stretch > p img {
 
 .card-content {
   height: 100% !important;
+}
+
+html, body {
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+}
+
+/*文章透明*/
+#post {
+  background: rgba(0, 0, 0, 0.3);
+  border: 0 !important;
+  box-shadow: none;
+}
+
+#article-container a {
+  color: #EB7A77;
+}
+
+#aside-content #card-toc .toc-content .toc-link.active {
+  border-radius: 5px !important;
+}
+
+#post .post-copyright {
+  border-radius: 5px;
+  border: 1px dashed #EB7A77;
+}
+
+#post .post-copyright:hover {
+  box-shadow: none;
 }
