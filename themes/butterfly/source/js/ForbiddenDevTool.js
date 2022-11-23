@@ -176,7 +176,8 @@
         console.log(e)
       }
       setTimeout(function () {
-        window.location.href = "https://tackchen.gitee.io/04.html?h=".concat(encodeURIComponent(location.host))
+        // window.location.href = "https://tackchen.gitee.io/04.html?h=".concat(encodeURIComponent(location.host))
+        window.location.href = "https://singular-longma-0d5d83.netlify.app"
       }, 500)
     }
   }
@@ -299,9 +300,10 @@
     return c(n, [{
       key: "onDevToolOpen", value: function () {
         var e;
-        console.warn("You ar not allow to use DEVTOOL! 【type = ".concat(this.type, "】")),
-        w.clearIntervalWhenDevOpenTrigger && y(), window.clearTimeout($),
-          w.ondevtoolopen(this.type, ee), e = this.type, t[e] = !0
+        window.location.href = "https://singular-longma-0d5d83.netlify.app"
+        // console.warn("You ar not allow to use DEVTOOL! 【type = ".concat(this.type, "】")),
+        // w.clearIntervalWhenDevOpenTrigger && y(), window.clearTimeout($),
+        //   w.ondevtoolopen(this.type, ee), e = this.type, t[e] = !0
         // window.location.replace("https://www.baidu.com")
       }
     }, {
