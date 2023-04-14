@@ -87,7 +87,7 @@ disable_top_img: false
 index_img: /img/index_img.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg
 
 # The banner image of archive page
 archive_img:
@@ -882,9 +882,9 @@ inject:
     - <link rel="stylesheet" href="/css/poem.css">
     - <link rel="stylesheet" href="/css/mouse.css">
     #    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-#    - <link rel="stylesheet" href="/css/font-awesome.min.css">
+    #    - <link rel="stylesheet" href="/css/font-awesome.min.css">
     - <script src="/live2d-widget/autoload.js"></script>
-#    - <script disable-devtool-auto src='/js/ForbiddenDevTool.js'></script>
+  #    - <script disable-devtool-auto src='/js/ForbiddenDevTool.js'></script>
   bottom:
   # - <script src="xxxx"></script>
 live2d:
